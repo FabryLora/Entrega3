@@ -1,0 +1,59 @@
+/* COLOR VARIABLES */
+/* FONT VARIABLES */
+/* SIZE VARIABLES */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url("../images/white-fabric-bg.jpg");
+  background-attachment: fixed;
+  font-family: "Montserrat" !important; }
+
+/* HEADER */
+.search-box {
+  width: 45% !important;
+  background-color: transparent !important;
+  border: 1px solid grey !important; }
+
+.nav-link {
+  color: black !important; }
+
+/* FONODO DE LATABLA DE HORARIOS */
+.bg-table {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+/* PRODUCTOS INICIO */
+.card-img-overlay {
+  background-color: rgba(250, 250, 250, 0.5);
+  height: 8rem; }
+
+/* GOOGLE MAP */
+.google-map {
+  max-width: 900px !important;
+  max-height: 450px !important; }
+
+/* FONDO DEL MAPA Y HORARIOS */
+.place-time-container {
+  background-color: #252525; }
+
+/* TITULO DEL MAPA Y HORARIOS */
+.text-place-time {
+  font-family: "Permanent Marker";
+  font-size: 30px; }
+
+/* FONDO DE LOS ULTIMOS PRODUCTOS */
+.card-group-prod {
+  background-color: white; }
+
+/* HOVER DE LOS LINKS */
+.footer-nav a:hover, .header-nav a:hover {
+  color: grey !important; }
+
+/* BG FOOTER */
+.container-footer {
+  background-color: rgba(140, 140, 140, 0.3); }
+
+/* ------------PAGINA-CONTACTO-------------- */
+.form-container {
+  background-color: rgba(250, 250, 250, 0.5); }

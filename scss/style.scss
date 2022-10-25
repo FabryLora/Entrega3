@@ -1,0 +1,75 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/white-fabric-bg.jpg");
+    background-attachment: fixed;
+    font-family: $body_font !important;
+}
+
+/* HEADER */
+.search-box {
+    width: 45% !important;
+    background-color: transparent !important;
+    border: 1px solid grey !important;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+/* FONODO DE LATABLA DE HORARIOS */
+.bg-table {
+    background-color: $transparent_black;
+}
+
+/* PRODUCTOS INICIO */
+.card-img-overlay {
+    background-color: $transparent_white;
+    height: 8rem;
+}
+
+/* GOOGLE MAP */
+.google-map {
+    max-width: $max_width_map !important;
+    max-height: $max_height_map !important;
+}
+
+/* FONDO DEL MAPA Y HORARIOS */
+.place-time-container {
+    background-color: $dark_grey;
+}
+
+/* TITULO DEL MAPA Y HORARIOS */
+.text-place-time {
+    font-family: $special_titles;
+    font-size: 30px;
+}
+
+/* FONDO DE LOS ULTIMOS PRODUCTOS */
+.card-group-prod {
+    background-color: white;
+}
+
+/* HOVER DE LOS LINKS */
+.footer-nav a:hover, .header-nav a:hover {
+    color: grey !important;
+}
+
+/* BG FOOTER */
+.container-footer {
+    background-color: $transparent_grey;
+}
+
+/* ------------PAGINA-CONTACTO-------------- */
+.form-container {
+    background-color: $transparent_white;
+}
+
+
+
+

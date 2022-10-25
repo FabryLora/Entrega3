@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda del Sol</title>
+  <link rel="shortcut icon" href="../images/logo/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-5 ">
+        <nav class="navbar navbar-expand-lg header-nav">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="preguntasfrecuentes.html">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">tipo1</a></li>
+                    <li><a class="dropdown-item" href="#">tipo2</a></li>
+                    <li><a class="dropdown-item" href="#">tipo3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="comocomprar.html">Como comprar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- LOGO LINK -->
+      <div class="col-md-2 text-center p-0">
+        <a href="../index.html"><img src="../images/logo/logo-black.png" width="250px" class="img-fluid"
+            alt="logo principal de la pagina"></a>
+      </div>
+      <!-- SEARCH BOX -->
+      <div class="col-md-5">
+        <form class="d-flex justify-content-center" role="search">
+          <input class="form-control me-2 search-box rounded-4" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success rounded-4" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col">
+        <img src="../images/frente-short.jpg" width="100%" alt="">
+      </div>
+
+      <div class="col">
+
+        <div class="form-container p-3 rounded-4">
+          <p class="h2 f2-bold text-center">Queremos conocerte</p>
+          <div class="mb-3">
+            <label for="form_name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="form_name" placeholder="Nombre">
+          </div>
+          <div class="mb-3">
+            <label for="form_email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="form_email" placeholder="email">
+          </div>
+          <div class="mb-3">
+            <label for="form_phone" class="form-label">Telefono</label>
+            <input type="text" class="form-control" id="form_phone" placeholder="Celular / Telefono">
+          </div>
+          <div class="mb-3">
+            <label for="form_text_area" class="form-label">Comentario / Pregunta</label>
+            <textarea class="form-control" id="form_text_area" rows="3"></textarea>
+          </div>
+          <div class="d-flex justify-content-end">
+            <input class="btn btn-outline-primary" type="submit" value="Enviar">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER - NAVBAR FOOTER - MEIOS DE PAGO - FORMAS DE ENVIO - CONTACTO - REDES SOCIALES -->
+  <footer class="container-fluid mt-5 p-3 container-footer">
+    <div class="row">
+      <div class="col">
+        <nav class="nav flex-column footer-nav">
+          <p class="h5 fw-bold">Navegacion</p>
+          <a class="p-0 nav-link" href="../index.html">Inicio</a>
+          <a class="p-0 nav-link" href="productos.html">Productos</a>
+          <a class="p-0 nav-link" href="contacto.html">Contacto</a>
+          <a class="p-0 nav-link" href="preguntasfrecuentes.html">Preguntas frecuentes</a>
+          <a class="p-0 nav-link" href="comocomprar.html">Como comprar</a>
+        </nav>
+      </div>
+
+      <div class="col">
+        <p class="fw-bold h5">Medios de pago</p>
+        <img src="../images/visa-png.png" width="50px" alt="">
+        <img src="../images/visa-png.png" width="50px" alt="">
+        <img src="../images/visa-png.png" width="50px" alt="">
+        <br>
+        <p class="mt-2 h5 fw-bold">Formas de envio</p>
+        <img src="../images/correo.png" width="50px" alt="">
+        <img src="../images/correo.png" width="50px" alt="">
+        <img src="../images/correo.png" width="50px" alt="">
+
+      </div>
+
+      <div class="col">
+        <p class="h5 fw-bold mt-2">Contactanos</p>
+        <p class="fw-bold mt-3"><img class="me-1" src="../images/icons/phone.svg" alt="">123 4567-8900</p>
+        <p class="fw-bold"><img class="me-1" src="../images/icons/at-sign.svg" alt="">mial@gmail.com</p>
+        <p class="fw-bold"><img class="me-1" src="../images/icons/map-pin.svg" alt="">Ituzaingo, Alvear 1569</p>
+      </div>
+
+      <div class="col">
+        <p class="h5 fw-bold mb-3">Redes sociales</p>
+        <a class="text-decoration-none d-block text-black fw-bold my-1"
+          href="https://www.instagram.com/tienda.del.sol/"><img class="pe-1" src="images/icons/instagram.svg"
+            alt="">@tienda.del.sol</a>
+        <a class="text-decoration-none d-block text-black fw-bold"
+          href="https://www.facebook.com/tiendadelsoltextil"><img class="pe-1" src="images/icons/facebook.svg"
+            alt="">@TiendaDelSol</a>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+
+
+
+</html>
