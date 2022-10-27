@@ -1,6 +1,6 @@
 /* COLOR VARIABLES */
 /* FONT VARIABLES */
-/* SIZE VARIABLES */
+/* DISPLAY NONE */
 * {
   margin: 0;
   padding: 0; }
@@ -10,6 +10,9 @@ body {
   background-attachment: fixed;
   font-family: "Familjen Grotesk" !important;
   font-size: 1.2em !important; }
+
+.ocultar {
+  display: none; }
 
 /* HEADER */
 .search-box {
@@ -36,13 +39,19 @@ body {
 .nav-link:hover:after {
   width: 100%; }
 
+/* CARRUSEL DE IMAGENES */
+.carousel-inner {
+  max-height: 800px !important; }
+
 /* CATEGORIAS DE PRODUCTOS */
 .category-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  max-width: 1600px;
+  margin: auto; }
 
 .category-element-container {
   width: 20em;
@@ -86,15 +95,6 @@ body {
 .img-creative {
   min-width: 292px; }
 
-/* PRODUCTOS INICIO */
-.card-img-overlay {
-  background-color: rgba(250, 250, 250, 0.5);
-  height: 8rem; }
-
-/* FONDO DE LOS ULTIMOS PRODUCTOS */
-.card-group-prod {
-  background-color: white; }
-
 /* HOVER DE LOS LINKS */
 .footer-nav a:hover, .category-element-container a:hover {
   color: grey !important; }
@@ -103,10 +103,60 @@ body {
 .container-footer {
   background-color: rgba(140, 140, 140, 0.3); }
 
+/* ------------PRODUCTOS-------------- */
+.prod-cat-container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr; }
+
+.cat-container {
+  justify-self: center; }
+
+.prod-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr 1fr 1fr; }
+  .prod-container div img {
+    transition: .3s !important; }
+    .prod-container div img:hover {
+      transform: scale(1.2); }
+
+.navbar-container-cat {
+  flex-flow: column;
+  align-items: flex-start !important; }
+
 /* ------------PAGINA-CONTACTO-------------- */
+.bg-main-contacto {
+  width: 80%;
+  background-color: rgba(250, 250, 250, 0.5);
+  margin: auto;
+  border-radius: 20px; }
+
 .form-col {
   max-width: 516px !important;
   margin: auto !important; }
+
+/* PAGINA: PREGUNTAS FRECUENTES */
+.bg-main-preguntas {
+  background-color: rgba(250, 250, 250, 0.5);
+  width: 80%;
+  margin: auto;
+  border-radius: 20px; }
+
+/* PAGINA: INSPIRATE */
+.ins-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr; }
+
+.img-ins-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+  .img-ins-container img {
+    transition: .3s; }
+    .img-ins-container img:hover {
+      transform: scale(1.2); }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1260px) {
@@ -117,6 +167,37 @@ body {
     width: 17em;
     height: 17em; } }
 
+@media screen and (max-width: 1220px) {
+  .prod-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr; } }
+
+@media screen and (max-width: 1166px) {
+  .ins-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; }
+    .ins-container img {
+      width: 90%; } }
+
+@media screen and (max-width: 1000px) {
+  .prod-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center; }
+  .prod-cat-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 16fr; }
+  .cat-container {
+    justify-self: end; } }
+
+@media screen and (max-width: 963px) {
+  .creative-container-img {
+    justify-content: space-evenly; } }
+
 @media screen and (max-width: 760px) {
   .category-container {
     grid-template-columns: 1fr;
@@ -125,16 +206,29 @@ body {
     width: 17em;
     height: 17em; }
   .ct-el-4, .ct-el-5, .ct-el-6 {
-    display: none; } }
-
-@media screen and (max-width: 963px) {
-  .creative-container-img {
-    justify-content: space-evenly; } }
-
-@media screen and (max-width: 760px) {
+    display: none; }
   .medios-formas {
     display: none; } }
+
+@media screen and (max-width: 646px) {
+  .prod-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center; }
+    .prod-container div {
+      text-align: center;
+      width: 175px !important; }
+      .prod-container div img {
+        width: 175px; } }
 
 @media screen and (max-width: 571px) {
   .contacto-footer {
     display: none; } }
+
+@media screen and (max-width: 391px) {
+  .bg-main-preguntas {
+    width: 90%;
+    margin-top: 1.5em; }
+  .img-preg {
+    width: 70px; } }
