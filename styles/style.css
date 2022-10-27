@@ -8,7 +8,8 @@
 body {
   background-image: url("../images/white-fabric-bg.jpg");
   background-attachment: fixed;
-  font-family: "Montserrat" !important; }
+  font-family: "Familjen Grotesk" !important;
+  font-size: 1.2em !important; }
 
 /* HEADER */
 .search-box {
@@ -19,35 +20,83 @@ body {
 .nav-link {
   color: black !important; }
 
-/* FONODO DE LATABLA DE HORARIOS */
-.bg-table {
-  background-color: rgba(0, 0, 0, 0.5); }
+.nav-link-header {
+  position: relative !important; }
+
+.nav-link-header:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 1px;
+  transition: 0.3s; }
+
+.nav-link:hover:after {
+  width: 100%; }
+
+/* CATEGORIAS DE PRODUCTOS */
+.category-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  justify-content: space-evenly; }
+
+.category-element-container {
+  width: 20em;
+  height: 20em;
+  background-size: cover; }
+
+.ct-el-1 {
+  background-image: url("../images/tela1.webp"); }
+
+.ct-el-2 {
+  background-image: url("../images/hilosdealgodon.jpg"); }
+
+.ct-el-3 {
+  background-image: url("../images/tulconbrillo.jpg"); }
+
+.ct-el-4 {
+  background-image: url("../images/lurex.jpg"); }
+
+.ct-el-5 {
+  background-image: url("../images/nidodeabeja.jpeg"); }
+
+.ct-el-6 {
+  background-image: url("../images/gasa.webp"); }
+
+/* CURSOS */
+.bg-creative {
+  background-image: url("../images/bg-hojas2.webp");
+  background-attachment: fixed; }
+
+.creative-title {
+  background-color: black;
+  display: inline-block;
+  padding: 0.6em;
+  margin-top: 0.5em !important; }
+
+.creative-container-img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+
+.img-creative {
+  min-width: 292px; }
 
 /* PRODUCTOS INICIO */
 .card-img-overlay {
   background-color: rgba(250, 250, 250, 0.5);
   height: 8rem; }
 
-/* GOOGLE MAP */
-.google-map {
-  max-width: 900px !important;
-  max-height: 450px !important; }
-
-/* FONDO DEL MAPA Y HORARIOS */
-.place-time-container {
-  background-color: #252525; }
-
-/* TITULO DEL MAPA Y HORARIOS */
-.text-place-time {
-  font-family: "Permanent Marker";
-  font-size: 30px; }
-
 /* FONDO DE LOS ULTIMOS PRODUCTOS */
 .card-group-prod {
   background-color: white; }
 
 /* HOVER DE LOS LINKS */
-.footer-nav a:hover, .header-nav a:hover {
+.footer-nav a:hover, .category-element-container a:hover {
   color: grey !important; }
 
 /* BG FOOTER */
@@ -55,5 +104,37 @@ body {
   background-color: rgba(140, 140, 140, 0.3); }
 
 /* ------------PAGINA-CONTACTO-------------- */
-.form-container {
-  background-color: rgba(250, 250, 250, 0.5); }
+.form-col {
+  max-width: 516px !important;
+  margin: auto !important; }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1260px) {
+  .category-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+  .category-element-container {
+    width: 17em;
+    height: 17em; } }
+
+@media screen and (max-width: 760px) {
+  .category-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+  .category-element-container {
+    width: 17em;
+    height: 17em; }
+  .ct-el-4, .ct-el-5, .ct-el-6 {
+    display: none; } }
+
+@media screen and (max-width: 963px) {
+  .creative-container-img {
+    justify-content: space-evenly; } }
+
+@media screen and (max-width: 760px) {
+  .medios-formas {
+    display: none; } }
+
+@media screen and (max-width: 571px) {
+  .contacto-footer {
+    display: none; } }

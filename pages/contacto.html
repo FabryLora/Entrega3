@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tienda del Sol</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="../images/logo/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../styles/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,6 +18,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,27 +37,19 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Inicio</a>
+                  <a class="nav-link nav-link-header" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contacto</a>
+                  <a class="nav-link nav-link-header" href="productos.html">Productos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="preguntasfrecuentes.html">Preguntas frecuentes</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="productos.html" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Productos
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">tipo1</a></li>
-                    <li><a class="dropdown-item" href="#">tipo2</a></li>
-                    <li><a class="dropdown-item" href="#">tipo3</a></li>
-                  </ul>
+                  <a class="nav-link nav-link-header" href="preguntasfrecuentes.html">Preguntas frecuentes</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="comocomprar.html">Como comprar</a>
+                  <a class="nav-link nav-link-header" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-header" href="comocomprar.html">Como comprar</a>
                 </li>
               </ul>
             </div>
@@ -60,8 +58,8 @@
       </div>
       <!-- LOGO LINK -->
       <div class="col-md-2 text-center p-0">
-        <a href="../index.html"><img src="../images/logo/logo-black.png" width="250px" class="img-fluid"
-            alt="logo principal de la pagina"></a>
+        <a href="index.html"><img src="../images/logo/logo-black.png" width="250px" class="img-fluid"
+            alt="logo tienda del sol"></a>
       </div>
       <!-- SEARCH BOX -->
       <div class="col-md-5">
@@ -73,14 +71,13 @@
     </div>
   </header>
 
+  <h3 class="h5 ms-4 mt-3">Inicio / <span class="fw-bold">Contacto</span></h3>
   <div class="container my-5">
-    <div class="row align-items-center">
-      <div class="col">
-        <img src="../images/frente-short.jpg" width="100%" alt="">
-      </div>
+    <div class="row align-items-center justify-content-center">
 
-      <div class="col">
+      <img style="max-width: 602px;" src="../images/prueba-contacto.jpg" alt="telas de colores">
 
+      <div class="col form-col">
         <div class="form-container p-3 rounded-4">
           <p class="h2 f2-bold text-center">Queremos conocerte</p>
           <div class="mb-3">
@@ -103,7 +100,6 @@
             <input class="btn btn-outline-primary" type="submit" value="Enviar">
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -113,42 +109,43 @@
       <div class="col">
         <nav class="nav flex-column footer-nav">
           <p class="h5 fw-bold">Navegacion</p>
-          <a class="p-0 nav-link" href="../index.html">Inicio</a>
-          <a class="p-0 nav-link" href="productos.html">Productos</a>
-          <a class="p-0 nav-link" href="contacto.html">Contacto</a>
-          <a class="p-0 nav-link" href="preguntasfrecuentes.html">Preguntas frecuentes</a>
-          <a class="p-0 nav-link" href="comocomprar.html">Como comprar</a>
+          <a class="p-0 nav-link" href="index.html">Inicio</a>
+          <a class="p-0 nav-link" href="pages/productos.html">Productos</a>
+          <a class="p-0 nav-link" href="pages/contacto.html">Contacto</a>
+          <a class="p-0 nav-link" href="pages/preguntasfrecuentes.html">Preguntas frecuentes</a>
+          <a class="p-0 nav-link" href="pages/comocomprar.html">Como comprar</a>
         </nav>
       </div>
 
-      <div class="col">
+      <div class="col medios-formas">
         <p class="fw-bold h5">Medios de pago</p>
-        <img src="../images/visa-png.png" width="50px" alt="">
-        <img src="../images/visa-png.png" width="50px" alt="">
-        <img src="../images/visa-png.png" width="50px" alt="">
+        <img src="../images/visa-png.png" width="50px" alt="metodo de pago visa">
+        <img src="../images/visa-png.png" width="50px" alt="metodo de pago visa">
+        <img src="../images/visa-png.png" width="50px" alt="metodo de pago visa">
         <br>
         <p class="mt-2 h5 fw-bold">Formas de envio</p>
-        <img src="../images/correo.png" width="50px" alt="">
-        <img src="../images/correo.png" width="50px" alt="">
-        <img src="../images/correo.png" width="50px" alt="">
+        <img src="../images/correo.png" width="50px" alt="correo argentino">
+        <img src="../images/correo.png" width="50px" alt="correo argentino">
+        <img src="../images/correo.png" width="50px" alt="correo argentino">
 
       </div>
 
-      <div class="col">
-        <p class="h5 fw-bold mt-2">Contactanos</p>
-        <p class="fw-bold mt-3"><img class="me-1" src="../images/icons/phone.svg" alt="">123 4567-8900</p>
-        <p class="fw-bold"><img class="me-1" src="../images/icons/at-sign.svg" alt="">mial@gmail.com</p>
-        <p class="fw-bold"><img class="me-1" src="../images/icons/map-pin.svg" alt="">Ituzaingo, Alvear 1569</p>
+      <div class="col contacto-footer">
+        <p class="h5 fw-bold">Contactanos</p>
+        <p class="fw-bold"><img class="me-1" src="../images/icons/phone.svg">011 5664-7158</p>
+        <p class="fw-bold"><img class="me-1" src="../images/icons/at-sign.svg">tiendadelsoltextil@gmail.com</p>
+        <p class="fw-bold"><img class="me-1" src="../images/icons/map-pin.svg">Gral. Félix Olazábal 774,Gran Buenos
+          Aires, Provincia de Buenos Aires</p>
       </div>
 
       <div class="col">
         <p class="h5 fw-bold mb-3">Redes sociales</p>
-        <a class="text-decoration-none d-block text-black fw-bold my-1"
-          href="https://www.instagram.com/tienda.del.sol/"><img class="pe-1" src="images/icons/instagram.svg"
-            alt="">@tienda.del.sol</a>
-        <a class="text-decoration-none d-block text-black fw-bold"
-          href="https://www.facebook.com/tiendadelsoltextil"><img class="pe-1" src="images/icons/facebook.svg"
-            alt="">@TiendaDelSol</a>
+        <a target="_blank" class="text-decoration-none d-block text-black fw-bold my-1"
+          href="https://www.instagram.com/tienda.del.sol/"><img class="pe-1"
+            src="../images/icons/instagram.svg">@tienda.del.sol</a>
+        <a target="_blank" class="text-decoration-none d-block text-black fw-bold"
+          href="https://www.facebook.com/tiendadelsoltextil"><img class="pe-1"
+            src="../images/icons/facebook.svg">@TiendaDelSol</a>
       </div>
 
     </div>
