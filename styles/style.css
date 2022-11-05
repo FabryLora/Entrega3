@@ -115,7 +115,8 @@ body {
 .prod-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 1fr 1fr 1fr 1fr; }
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: center !important; }
   .prod-container div img {
     transition: .3s !important; }
     .prod-container div img:hover {
@@ -144,21 +145,16 @@ body {
   border-radius: 20px; }
 
 /* PAGINA: INSPIRATE */
-.ins-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr; }
-
-.img-ins-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; }
-  .img-ins-container img {
-    transition: .3s; }
-    .img-ins-container img:hover {
-      transform: scale(1.2); }
+.scale-effect img {
+  transition: .3s; }
+  .scale-effect img:hover {
+    transform: scale(1.2); }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1400px) {
+  .scale-effect {
+    margin: 30px 0px !important; } }
+
 @media screen and (max-width: 1260px) {
   .category-container {
     grid-template-columns: 1fr 1fr;
@@ -174,29 +170,37 @@ body {
     grid-auto-rows: 1fr 1fr 1fr 1fr 1fr; } }
 
 @media screen and (max-width: 1166px) {
-  .ins-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; }
-    .ins-container img {
-      width: 90%; } }
+  .img-inspire img {
+    width: 90%; }
+  .img-inspire {
+    flex-direction: column;
+    justify-content: center; } }
 
 @media screen and (max-width: 1000px) {
   .prod-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-items: center; }
   .prod-cat-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 16fr; }
+    grid-template-rows: 3% 1fr; }
+  .navbar-container-cat {
+    background-color: white;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 20px; }
   .cat-container {
-    justify-self: end; } }
+    width: 100%; } }
 
 @media screen and (max-width: 963px) {
   .creative-container-img {
     justify-content: space-evenly; } }
+
+@media screen and (max-width: 767px) {
+  .orden {
+    order: 3 !important; } }
 
 @media screen and (max-width: 760px) {
   .category-container {
